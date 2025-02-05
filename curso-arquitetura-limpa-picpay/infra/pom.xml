@@ -3,17 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>br.com.curso</groupId>
+        <artifactId>curso-arquitetura-limpa-picpay</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>br.com.curso</groupId>
-    <artifactId>curso-arquitetura-limpa-picpay</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>core</module>
-        <module>usecase</module>
-        <module>application</module>
-        <module>infra</module>
-    </modules>
+    <artifactId>infra</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
