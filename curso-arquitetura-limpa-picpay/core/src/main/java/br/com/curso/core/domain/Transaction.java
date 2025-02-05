@@ -1,5 +1,7 @@
 package br.com.curso.core.domain;
 
+import br.com.curso.core.domain.enums.TransactionStatusEnum;
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Objects;
