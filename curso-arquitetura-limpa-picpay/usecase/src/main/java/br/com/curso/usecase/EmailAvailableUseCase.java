@@ -1,5 +1,5 @@
 package br.com.curso.usecase;
 
-public interface EmailAvaliableUseCase {
+public interface EmailAvailableUseCase {
     Boolean avaliable(String email);
 }
