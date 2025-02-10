@@ -13,16 +13,18 @@ public class Wallet {
     private User user;
     private LocalDateTime createdAt;
     private LocalDateTime updateAt;
+    private TransactionPin transactionPin;
 
     public Wallet() {
     }
 
-    public Wallet(Long id, BigDecimal balance, User user, LocalDateTime createdAt, LocalDateTime updateAt) {
+    public Wallet(Long id, BigDecimal balance, User user, LocalDateTime createdAt, LocalDateTime updateAt, TransactionPin transactionPin) {
         this.id = id;
         this.balance = balance;
         this.user = user;
         this.createdAt = createdAt;
         this.updateAt = updateAt;
+        this.transactionPin = transactionPin;
     }
 
     public Wallet(BigDecimal balance, User user) {
@@ -77,5 +79,13 @@ public class Wallet {
 
     public void setUpdateAt(LocalDateTime updateAt) {
         this.updateAt = updateAt;
+    }
+
+    public TransactionPin getTransactionPin() {
+        return transactionPin;
+    }
+
+    public void setTransactionPin(TransactionPin transactionPin) {
+        this.transactionPin = transactionPin;
     }
 }
